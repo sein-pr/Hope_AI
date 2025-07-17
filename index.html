@@ -1,27 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="active-home">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hope - Virtual Assistant</title>
-    <link rel="shortcut icon" href="assets/avatar.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UraMap Namibia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/particles.css">
+  <script src="assets/js/include-navbar.js"></script>
+  <link rel="icon" type="image/png" href="assets/img/ico.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body>
-    <section class="main">
-        <div class="image-container">
-            <div class="image">
-                <img src="assets/anim.gif" alt="image">
+
+<body class="active-home">
+
+  <div id="navbar-placeholder"></div>
+
+  <div class="hero-and-image-container">
+    <div id="particles-js"></div>
+    <section class="hero d-flex align-items-center"> <div class="container hero-content-wrapper"> <div class="row align-items-center"> <div class="col-lg-7 col-md-12 text-center text-lg-start text-white"> <h1 class="display-4 fw-bold mb-3">Explore Namibia's Uranium Landscape</h1>
+            <p class="lead mt-3 mb-4 pe-lg-5" id="heroSlogan">Uncover interactive maps, dive into mining methods, visualize data, and learn about uranium's role in Namibia's future.</p>
+            <div class="d-flex justify-content-center justify-content-lg-start flex-wrap">
+              <a href="map.html" class="btn btn-primary btn-lg mx-2 mb-2 hero-btn">Explore Map</a>
+              <a href="learn.html" class="btn btn-outline-light btn-lg mx-2 mb-2 hero-btn">Learn More</a>
             </div>
-            <h1>H O P E</h1>
-            <p class="intro">I am a Virtual Assistant Hope, How may I help you?</p>
+          </div>
+          <div class="col-lg-5 col-md-12 text-center mt-4 mt-lg-0"> <div class="hero-image-wrapper">
+              <img src="assets/img/uramap_intro.png" alt="Namibian Landscape" class="img-fluid rounded shadow-lg hero-main-image">
+            </div>
+          </div>
         </div>
-        <div class="input">
-            <i class="fas fa-microphone-alt"></i>
-            <h1 class="content">Click here to speak</h1>
-        </div>
+      </div>
     </section>
-    <script src="script/app.js"></script>
-</body>
+  </div>
+
+  <section class="about-section py-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+          <div class="intro-image-wrapper">
+            <img src="assets/img/back.png" alt="UraMap Dashboard" class="img-fluid rounded-lg shadow-lg">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 text-center text-lg-start">
+          <p class="section-label text-uppercase mb-1">About Us</p>
+          <div class="section-underline mx-auto mx-lg-0 mb-4"></div>
+          <h2 class="fw-bold mb-3" id="">Your Gateway to Namibia's Uranium Industry</h2>
+          <p class="text-muted mb-4">
+            UraMap Namibia provides comprehensive insights into the country's uranium sector. From geological data to
+            mining methods and production statistics, our platform is designed for students, researchers, and anyone
+            interested in Namibia's rich mineral resources.
+          </p>
+
+          <div class="d-flex align-items-start mb-4">
+            <i class="fas fa-eye fa-lg me-3 text-primary"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Our Vision</h6>
+              <p class="mb-0 text-muted">To be the leading interactive resource for uranium education and data in Namibia.</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-4">
+            <i class="fas fa-lightbulb fa-lg me-3 text-success"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Our Mission</h6>
+              <p class="mb-0 text-muted">Empowering informed decisions through accessible, visualized, and interactive geological data.</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-4">
+            <i class="fas fa-star fa-lg me-3 text-warning"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Our Values</h6>
+              <p class="mb-0 text-muted">Innovation, integrity, collaboration, and open access to critical information.
+              </p>
+            </div>
+          </div>
+
+          <a href="about.html" class="btn btn-outline-dark px-4">More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#F5E8D8" fill-opacity="1"
+      d="M0,192L60,186.7C120,181,240,171,360,176C480,181,600,203,720,192C840,181,960,139,1080,128C1200,117,1320,139,1380,149.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+    </path>
+  </svg>
+
+
+  <section class="key-features-section py-5" style="background-color: #F5E8D8;">
+    <div class="container py-4">
+      <p class="section-label text-uppercase mb-1 text-center mb-4">Features</p>
+      <div class="section-underline mx-auto mb-4"></div>
+      <h2 class="text-center fw-bold mb-5">Discover What UraMap Offers</h2>
+
+      <div class="row text-center" onclick="window.location.href='map.html'">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm p-4">
+            <div class="card-body">
+              <i class="fas fa-map-marked-alt fa-3x text-primary mb-3"></i>
+              <h5 class="card-title fw-bold">Interactive Map</h5>
+              <p class="card-text">Explore uranium mining sites in Namibia with detailed, interactive markers and overlays.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" onclick="window.location.href='learn.html#learn-mining.html'">
+          <div class="card h-100 shadow-sm p-4">
+            <div class="card-body">
+              <i class="fas fa-tools fa-3x text-success mb-3"></i>
+              <h5 class="card-title fw-bold">Mining Methods</h5>
+              <p class="card-text ">Learn about various uranium extraction techniques and their environmental considerations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" onclick="window.location.href='dashboard.html'">
+          <div class="card h-100 shadow-sm p-4">
+            <div class="card-body">
+              <i class="fas fa-chart-line fa-3x text-info mb-3"></i>
+              <h5 class="card-title fw-bold">Data Visualization</h5>
+              <p class="card-text ">Access and visualize key data trends related to uranium production and exports.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm p-4">
+            <div class="card-body">
+              <i class="fas fa-mountain fa-3x text-warning mb-3"></i>
+              <h5 class="card-title fw-bold">Geological Insights</h5>
+              <p class="card-text">Understand the geological formations and processes involved in uranium deposits.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" onclick="window.location.href='simulate.html'">
+          <div class="card h-100 shadow-sm p-4">
+            <div class="card-body">
+              <i class="fas fa-flask fa-3x text-danger mb-3"></i>
+              <h5 class="card-title fw-bold">Simulation Tools</h5>
+              <p class="card-text">Experiment with simplified simulations of mining decisions and their outcomes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" onclick="window.location.href='learn.html'">
+          <div class="card h-100 shadow-sm p-4">
+            <div class="card-body">
+              <i class="fas fa-book-open fa-3x text-secondary mb-3"></i>
+              <h5 class="card-title fw-bold">Educational Content</h5>
+              <p class="card-text">Comprehensive articles and resources for students and the general public.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#F5E8D8" fill-opacity="1"
+      d="M0,160L48,160C96,160,192,160,288,149.3C384,139,480,117,576,122.7C672,128,768,160,864,165.3C960,171,1056,149,1152,128C1248,107,1344,85,1392,74.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+    </path>
+  </svg>
+
+
+  <section class="cta-section text-white text-center py-5">
+    <div class="container py-4">
+      <h2 class="display-5 fw-bold mb-3">Ready to Dive Deeper?</h2>
+      <p class="lead mb-4">Join us in exploring the fascinating world of uranium in Namibia. Your journey into geological insights and mining innovation starts here.</p>
+      <a href="contact.html" class="btn btn-light btn-lg px-5 py-3 rounded-pill cta-button">Get in Touch</a>
+    </div>
+  </section>
+
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="assets/js/particles-config.js"></script>
+  <script src="assets/js/hero-animation.js"></script>
+  <script>
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="jteZaOwd5Vu1xX6Pv13ZK";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+  </script>
+
 </html>

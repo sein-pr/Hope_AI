@@ -1,0 +1,329 @@
+:root {
+  --primary-color: #77A88F; /* Example: A green shade */
+  --secondary-color: #B35C27; /* Example: An orange-brown shade */
+  --light-bg-color: #F5E8D8; /* Example: A light background */
+  --text-dark: #212529; /* Standard dark text */
+  --text-muted: #6c757d; /* Muted text */
+  --navbar-bg: #234738;
+  /* Add more as needed, e.g., --spacing-sm, --spacing-md */
+}
+
+/* Then use them like: */
+.btn-primary {
+  background-color: var(--primary-color);
+}
+.navbar-dark {
+  background-color: var(--navbar-bg) !important;
+}
+body {
+    margin: 0;
+    font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+.navbar li{
+  font-size: 1.1rem;
+}
+
+/* Logo Styling in Navbar */
+.navbar-brand img {
+  height: 3rem;
+  width: auto;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+/* Hover effect */
+.navbar-brand img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.hero-and-image-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #F5E8D8, #77A88F, #B35C27);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+}
+
+
+.hero {
+  color: #ffffff;
+  padding: 50px 20px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  text-align: start;
+  position: relative;
+  z-index: 1; 
+  overflow: hidden;
+  flex: 1;
+  min-width: 300px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+/* Animations for Hero and About Section */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+.fade-in-up {
+    animation: fadeInUp 1.2s ease-out forwards;
+}
+
+
+/* Scroll-triggered fade-in for sections */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Move gradientShift animation here if you want it only on the background container */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Ensures hero-content is above particles and hero background */
+}
+
+.navbar-nav .nav-link.active {
+  border-bottom: 2px solid #B35C27;
+  color: #EBD6B2 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #F5E8D8 !important;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #77A88F !important;
+    transition: color 0.3s ease;
+}
+
+/* Image Styling */
+.intro-image-wrapper {
+    flex: 1 1 350px;
+    width: 60%;
+    max-width: 500px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1; /* Ensures image is above particles */
+    background-color: rgba(255,255,255,0.1); 
+    border-radius: 8px; 
+}
+
+.intro-image {
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.intro-image:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .hero-and-image-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .hero {
+        margin-right: 0;
+        margin-bottom: 30px;
+        padding: 80px 20px;
+    }
+
+    .intro-image-wrapper {
+        width: 80%;
+        max-width: 400px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 60px 15px;
+        min-height: 70vh;
+    }
+
+    .intro-image-wrapper {
+        width: 95%;
+        margin-top: 20px;
+    }
+}
+
+.modal-content {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  padding: 1rem 1.5rem;
+  background-color: #222;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-body video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* About Section */
+.about-section {
+  padding-top: 5rem;
+  background-color: #f8f9fa;
+  
+}
+
+.section-label {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #777;
+}
+
+.section-underline {
+  width: 50%;
+  height: 3px;
+  background-color: #B35C27;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.about-section h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem
+}
+
+.about-section p {
+    font-size: 1.1rem; 
+    line-height: 1.7; 
+}
+
+.about-section .fa-lg {
+  font-size: 3rem;
+  margin-top: 4px;
+}
+
+.about-section .intro-image-wrapper{
+  margin-left: 4rem;
+}
+
+/* About Section - Image Styling */
+.about-section img {
+  width: 30rem;
+  max-width: 60rem;
+  height: auto;
+  border-radius: 12px 0 0 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section img:hover {
+  transform: scale(1.02);
+}
+
+/* Already present responsive layout for small screens */
+@media (max-width: 768px) {
+  .about-section img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .about-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .section-underline {
+    width: 40%;
+  }
+}
+
+.key-features-section .card {
+  transition: box-shadow 0.3s, transform 0.2s, background 0.2s;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  background: #fff;
+  border-radius: 8px;
+  }
+
+  .key-features-section .card:hover {
+    box-shadow: 0 6px 24px rgba(179,92,39,0.18);
+    transform: translateY(-4px) scale(1.03);
+    background: #77A88F;
+    color: #fff;
+    font-size: 1rem;
+}

@@ -1,0 +1,87 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-07-12T21:26:14Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/970233247",
+        "landuse": "quarry",
+        "name": "Trekkopje Mine",
+        "operator": "Orano",
+        "status": "development",
+        "resource": "uranium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.8242186,
+              -22.1973104
+            ],
+            [
+              14.8237869,
+              -22.1999454
+            ],
+            [
+              14.8239723,
+              -22.2009545
+            ],
+            [
+              14.824435,
+              -22.2018466
+            ],
+            [
+              14.8248707,
+              -22.2018467
+            ],
+            [
+              14.8254459,
+              -22.2019709
+            ],
+            [
+              14.8259934,
+              -22.2019923
+            ],
+            [
+              14.82623,
+              -22.2017265
+            ],
+            [
+              14.8262905,
+              -22.2013687
+            ],
+            [
+              14.8263125,
+              -22.2012382
+            ],
+            [
+              14.8261516,
+              -22.2003676
+            ],
+            [
+              14.826228,
+              -22.1995912
+            ],
+            [
+              14.8263592,
+              -22.1985746
+            ],
+            [
+              14.8263733,
+              -22.1973641
+            ],
+            [
+              14.8242186,
+              -22.1973104
+            ]
+          ]
+        ]
+      },
+      "id": "way/970233247"
+    }
+  ]
+}

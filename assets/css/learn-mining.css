@@ -1,0 +1,160 @@
+/* learn-mining.css */
+
+/* Reusing color variables from learn.css and learn-uranium.css */
+:root {
+  --primary-color: #77A88F; /* Greenish */
+  --secondary-color: #B35C27; /* Orangish */
+  --light-bg-color: #F5E8D8; /* Light background */
+  --text-dark: #212529;
+  --text-muted: #6c757d;
+  --navbar-bg: #234738; /* Dark teal */
+}
+
+/* Specific styles for the hero icon in this module */
+.hero-icon {
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.hero-icon:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Styling for the Method Comparison Cards (ISR and Open Pit) */
+.method-card {
+  background-color: #fff; /* White background for clarity */
+  border: 1px solid #e0e0e0; /* Light border */
+  border-radius: 12px; /* Rounded corners */
+  text-align: center; /* Center content within the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.method-card .card-body {
+  padding: 2rem; /* Ample padding inside the card */
+}
+
+.method-card i {
+  color: var(--primary-color); /* Default icon color, overridden for specific cards */
+  margin-bottom: 1rem;
+  font-size: 3rem; /* Large icons for visual impact */
+}
+
+.method-card h4 {
+  margin-bottom: 1rem;
+}
+
+.navbar li{
+    font-size: 1.1rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+strong{
+    color: #234738;
+}
+
+img {
+  max-width: 100%;
+  height: 70vh;
+}
+
+.method-card p.text-muted {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.method-card ul {
+  margin-top: 1.5rem;
+  text-align: left; /* Align list items to the left */
+  padding-left: 0; /* Remove default padding */
+}
+
+.method-card ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+/* Styling for checkmark and cross icons within lists */
+.method-card ul li i.text-success {
+  color: var(--primary-color); /* Green check for pros, consistent with primary color */
+}
+
+.method-card ul li i.text-danger {
+  color: var(--secondary-color); /* Orange/red cross for cons, consistent with secondary color */
+}
+
+/* Specific styling for ISR card to use primary theme color */
+.isr-card i {
+  color: var(--primary-color);
+}
+
+.isr-card h4 {
+  color: var(--primary-color);
+}
+
+/* Specific styling for Open Pit card to use secondary theme color */
+.open-pit-card i {
+  color: var(--secondary-color);
+}
+
+.open-pit-card h4 {
+  color: var(--secondary-color);
+}
+
+/* Hover effect for method cards - consistent with other cards */
+.method-card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .hero-icon {
+    font-size: 8x; /* Smaller icon on mobile to fit better */
+  }
+
+  .method-card .card-body {
+    padding: 1.5rem; /* Reduce padding on smaller screens */
+  }
+
+  .method-card i {
+    font-size: 2.5rem; /* Slightly smaller icons */
+  }
+}
+
+/* learn-mining.css */
+
+/* ... (previous CSS rules) ... */
+
+/* Video container to enforce aspect ratio */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio (height / width = 9 / 16 = 0.5625) */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px; /* Inherit rounded corners from HTML */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Inherit shadow from HTML */
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers the area without distortion */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* ... (other responsive rules) ... */
+
+  /* Adjust video aspect ratio for smaller screens if needed, or keep consistent */
+  .video-wrapper {
+    padding-bottom: 56.25%; /* Keep 16:9 for consistency across devices */
+  }
+}

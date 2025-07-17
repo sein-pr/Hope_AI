@@ -1,0 +1,337 @@
+:root {
+  --primary-color: #77A88F;
+  --secondary-color: #B35C27;
+  --light-bg-color: #F5E8D8;
+  --text-dark: #212529;
+  --text-muted: #6c757d;
+  --navbar-bg: #234738;
+}
+
+/* Hero Section */
+.hero-and-image-container {
+  background: linear-gradient(135deg, var(--light-bg-color) 0%, var(--primary-color) 50%, var(--secondary-color) 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-and-image-container .hero-main-image {
+  max-width: 100%;
+
+  border-radius: 12px;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+  transition: transform 0.3s ease;
+}
+
+.hero-and-image-container .hero-main-image:hover {
+  transform: scale(1.03);
+}
+
+.hero-content-wrapper h1.display-3 {
+  color: #fff;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 3.5rem;
+}
+
+.hero-content-wrapper p.lead {
+  color: #e9ecef;
+  font-size: 1.5rem;
+}
+
+/* Particles.js Background */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* Content Sections */
+section {
+  padding: 4rem 0;
+}
+
+.section-label {
+  font-size: 1.5rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-align: center;
+}
+
+.section-underline {
+  width: 20%;
+  height: 4px;
+  background-color: var(--secondary-color);
+  margin: 0.75rem auto 2rem;
+}
+
+/* Typography */
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+h5 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+#uranium-intro p, #uranium-intro li {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  text-align: start;
+}
+
+#namibia-uranium p, #namibia-uranium li {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  text-align: start;
+}
+
+strong {
+  color: var(--primary-color);
+}
+
+/* Info Box */
+.alert-info {
+  background-color: #eaf8f5;
+  border-left: 6px solid var(--primary-color);
+  color: var(--text-dark);
+  font-size: 1.05rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Images */
+.module-image {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.module-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Accordion */
+.accordion-item {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+  font-weight: 600;
+  color: var(--text-dark);
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--light-bg-color);
+  color: var(--secondary-color);
+}
+
+.accordion-body {
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+  padding: 1.5rem;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: var(--navbar-bg);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.25rem;
+}
+
+.cta-section .btn {
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 2.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.cta-section .btn:hover {
+  background-color: #a04b20;
+  transform: translateY(-2px);
+}
+
+/* learn-uranium.css */
+/* Offcanvas Container */
+.offcanvas {
+  background-color: var(--light-bg-color); /* Matches light background of the platform */
+}
+
+/* Offcanvas Header */
+.offcanvas-header {
+  background-color: var(--navbar-bg); /* Dark teal for consistency with navbar */
+  color: white; /* White text for contrast */
+  padding: 1rem;
+}
+
+.offcanvas-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Offcanvas Body */
+.offcanvas-body {
+  color: var(--text-dark); /* Dark text for readability */
+  padding: 1.5rem;
+}
+
+/* Quiz Question */
+.quiz-question {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+/* Quiz Answer Options */
+.quiz-options {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-options li {
+  background-color: #fff; /* White background for options */
+  border: 1px solid var(--text-muted); /* Muted border for definition */
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners like other elements */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow from module-image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth interaction */
+}
+
+.quiz-options li:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.quiz-options li.selected {
+  background-color: var(--primary-color); /* Green when selected */
+  color: white; /* White text for contrast */
+  border-color: var(--primary-color);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Consistent shadow */
+}
+
+/* Quiz Buttons */
+.btn-quiz {
+  background-color: var(--primary-color); /* Primary color for buttons */
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px; /* Rounded like CTA buttons */
+  font-weight: 600;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.btn-quiz:hover {
+  background-color: #5a8a6f; /* Darker shade of primary color */
+}
+
+/* Drag-and-Drop Drop Zone */
+.drop-zone {
+  background-color: #eaf8f5; /* Light green from alert-info */
+  border: 2px dashed var(--primary-color); /* Dashed border for drop area */
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Draggable Elements */
+.draggable {
+  background-color: #fff;
+  border: 1px solid var(--text-muted);
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: grab;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.draggable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Quiz Completion Message */
+.quiz-complete {
+  background-color: #eaf8f5; /* Light green for success */
+  border: 1px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-dark);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .offcanvas-header {
+    padding: 0.75rem;
+  }
+
+  .offcanvas-title {
+    font-size: 1.25rem;
+  }
+
+  .quiz-question {
+    font-size: 1rem;
+  }
+
+  .quiz-options li {
+    padding: 0.3rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .btn-quiz {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .drop-zone {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}

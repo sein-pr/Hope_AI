@@ -1,0 +1,135 @@
+{
+  "modules": [
+    {
+      "id": "uranium-geology",
+      "title": "Uranium Geology: Formation & Deposits",
+      "description": "Dive into the fascinating geological processes that lead to the formation of uranium deposits and where they are found in Namibia.",
+      "sections": [
+        {
+          "title": "What is Uranium?",
+          "content": [
+            "Uranium is a silvery-white metallic chemical element with the symbol U and atomic number 92. It is naturally radioactive and is the primary fuel for nuclear power plants. Its unique nuclear properties make it suitable for energy production through nuclear fission, where the nucleus of an atom splits into smaller parts, releasing a tremendous amount of energy.",
+            "Found in small amounts in rocks, soil, and water, uranium is a relatively common element in the Earth's crust, more abundant than silver or gold. It's an important energy source due to its high energy density."
+          ],
+          "image": {
+            "src": "assets/img/mining_methods.gif",
+            "alt": "Sample of Uranium Ore"
+          },
+          "facts": [
+            "Uranium is roughly 500 times more abundant than gold and 35 times more abundant than silver in the Earth's crust.",
+            "One kilogram of uranium-235 can produce about 24 million kilowatt-hours of electricity, equivalent to burning 2.7 million kilograms of coal.",
+            "The element uranium was discovered in 1789 by Martin Heinrich Klaproth, a German chemist, who named it after the planet Uranus."
+          ]
+        },
+        {
+          "title": "Geological Formations in Namibia",
+          "content": [
+            "Namibia is globally recognized for its significant uranium deposits, primarily hosted within granitic and metamorphic rocks, specifically within the Damara Orogen.",
+            "The country's major uranium mines exploit different types of deposits:",
+            "**Rössing Mine:** Primarily an open-pit mine targeting uraniferous alaskite. These are leucocratic (light-colored) granitic rocks enriched in uranium. The Rössing deposit is considered a granite-related, disseminated type, where uranium minerals are spread throughout the rock.",
+            "**Langer Heinrich Mine:** Exploits calcrete-type uranium deposits. These are surficial accumulations of uranium in arid environments, often found in palaeochannels (ancient riverbeds). The uranium precipitates from groundwater in calcium carbonate-rich sediments."
+          ],
+          "image": {
+            "src": "assets/img/mining_methods.gif",
+            "alt": "Simplified Geological Map of Namibia showing mineral belts"
+          },
+          "list": [
+            "Namibia's uranium resources are mainly concentrated in the Central Namib Desert.",
+            "The two primary deposit types are alaskite-hosted (e.g., Rössing) and calcrete-hosted (e.g., Langer Heinrich).",
+            "These geological settings contribute significantly to Namibia's position as a major global uranium producer."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mining-techniques",
+      "title": "Uranium Mining Methods & Innovation",
+      "description": "Explore the various methods used to extract uranium from the earth, from traditional approaches to innovative biotechnologies, emphasizing efficiency and environmental stewardship.",
+      "sections": [
+        {
+          "title": "Traditional Mining Methods",
+          "content": [
+            "Traditional uranium mining involves either open-pit or underground methods, largely similar to other hard rock mining operations. The choice of method depends on the depth, size, and geometry of the ore body.",
+            "**Open-Pit Mining:** This method is used when uranium deposits are close to the surface. It involves excavating a large, progressively deeper pit to access the ore body. Rössing Uranium Mine, one of the world's largest open-pit uranium mines, is a prime example of this method in action in Namibia.",
+            "**Underground Mining:** Employed for deeper, higher-grade deposits that are not economically accessible by open-pit methods. It involves sinking shafts and creating tunnels to reach the ore. This method is generally more expensive and technically challenging due to safety and ventilation requirements."
+          ],
+          "image": {
+            "src": "assets/img/mining_methods.gif",
+            "alt": "Large-scale open-pit mining operation"
+          },
+          "facts": [
+            "Open-pit mining can involve moving vast quantities of rock and earth.",
+            "Underground mining typically has a smaller surface footprint but can be more hazardous.",
+            "Both methods involve crushing and grinding the ore, followed by chemical leaching to extract uranium."
+          ]
+        },
+        {
+          "title": "Biotechnological Innovations: ISR & Bioleaching",
+          "content": [
+            "Biotechnologies are revolutionizing uranium extraction, offering more environmentally friendly and often more cost-effective alternatives, especially for lower-grade ores or complex geological settings. [cite: 54]",
+            "**In-Situ Recovery (ISR):** This modern method involves injecting a leaching solution (lixiviant) directly into the underground ore body through boreholes. The solution dissolves the uranium, and the uranium-rich solution is then pumped to the surface for processing. ISR significantly minimizes surface disruption, reduces solid waste generation, and lowers energy consumption compared to conventional mining. It's particularly suitable for permeable sandstone-hosted deposits. [cite: 54]",
+            "**Bacterial Leaching (Bioleaching):** Often integrated with ISR, bioleaching uses naturally occurring or engineered microorganisms to oxidize and dissolve uranium from ore. Certain bacteria accelerate the leaching process, making the extraction more efficient and reducing the need for harsh chemicals. This approach is gaining traction for its lower environmental impact and potential for recovering uranium from previously uneconomical deposits. [cite: 54]"
+          ],
+          "image": {
+            "src": "assets/img/mining_methods.gif",
+            "alt": "Diagram illustrating the In-Situ Recovery (ISR) and Bioleaching process"
+          },
+          "list": [
+            "ISR minimizes surface disturbance and reduces solid waste generation[cite: 54].",
+            "Bioleaching can be a more environmentally benign method compared to traditional chemical leaching[cite: 54].",
+            "These innovations contribute to the long-term sustainability of uranium mining practices. [cite: 54]"
+          ],
+          "learnMore": {
+            "text": "Explore In-Situ Recovery (IAEA)",
+            "url": "https://www.iaea.org/publications/6134/in-situ-leaching-of-uranium-mining"
+          }
+        }
+      ]
+    },
+    {
+      "id": "environmental-impact",
+      "title": "Environmental Impact & Sustainability",
+      "description": "Understand the environmental considerations associated with uranium mining and nuclear energy, and the robust efforts towards sustainable development and responsible stewardship in Namibia.",
+      "sections": [
+        {
+          "title": "Waste Management & Tailings",
+          "content": [
+            "Uranium mining and processing generate various types of waste, with radioactive tailings being the primary concern. Tailings are the finely ground rock material remaining after the uranium has been extracted from the ore. These contain naturally occurring radioactive materials (NORM) and chemical residues.",
+            "Effective waste management is critical. Modern facilities employ stringent protocols for tailings storage, including engineered containment facilities designed to prevent leakage and environmental contamination. Rehabilitation programs are integral, aiming to restore mined areas to a safe and stable condition post-closure.",
+            "The long-term safe disposal of spent nuclear fuel (from power plants) is a separate but related challenge, typically handled through deep geological repositories, a solution increasingly being adopted globally."
+          ],
+          "image": {
+            "src": "assets/img/mining_methods.gif",
+            "alt": "Image of a modern engineered tailings storage facility"
+          },
+          "facts": [
+            "Tailings are carefully managed to minimize dust dispersion and water contamination.",
+            "Bioremediation techniques can be applied to treat and stabilize contaminated sites, reducing long-term environmental risks.",
+            "International Atomic Energy Agency (IAEA) provides comprehensive safety standards for radioactive waste management."
+          ]
+        },
+        {
+          "title": "Carbon Footprint & Climate Change Mitigation",
+          "content": [
+            "Nuclear energy is a significant low-carbon power source, producing virtually no greenhouse gas emissions during its operation phase. [cite: 66]",
+            "While there are emissions associated with the entire life cycle of nuclear power – including uranium mining, fuel fabrication, power plant construction, and waste disposal – these are generally comparable to or lower than those of renewable energy sources like wind and solar, and dramatically lower than fossil fuels.",
+            "Nuclear power plays a vital role in global efforts to combat climate change by providing reliable, baseload electricity without emitting large quantities of CO2, SO2, or NOx. It helps diversify energy mixes and enhance energy security."
+          ],
+          "video": {
+            "src": "https://www.youtube.com/embed/rcx2P0g19cQ?si=c-FqL42a12X_hFf3",
+            "alt": "Video explaining nuclear energy's role in climate change mitigation"
+          },
+          "list": [
+            "Nuclear power plants do not emit CO2, SO2, or NOx during electricity generation. [cite: 66]",
+            "It provides reliable, baseload power, complementing intermittent renewables like solar and wind.",
+            "Investment in nuclear technology is considered crucial for achieving climate goals by many international bodies, including the IAEA."
+          ],
+          "learnMore": {
+            "text": "View IAEA Report on Climate Change",
+            "url": "https://www.iaea.org/topics/nuclear-power-and-climate-change"
+          }
+        }
+      ]
+    }
+  ]
+}

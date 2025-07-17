@@ -1,0 +1,53 @@
+<!-- navbar.html -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #234738;">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="assets/img/logo.png" alt="UraMap Logo" width="40" height="40" class="me-2">
+      <!-- <span style="font-weight: bold; font-size: 1.25rem;">UraMap Namibia</span> -->
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link home-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link map-link" href="map.html">Uranium Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link learn-link" href="learn.html">Learn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link simulate-link" href="simulate.html">Simulate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dashboard-link" href="dashboard.html">Data Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link contact-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Highlight active nav link based on body class
+  const bodyClass = document.body.className;
+  if (bodyClass.includes('active-home')) {
+    document.querySelector('.home-link')?.classList.add('active');
+  } else if (bodyClass.includes('active-map')) {
+    document.querySelector('.map-link')?.classList.add('active');
+  } else if (bodyClass.includes('active-learn')) {
+    document.querySelector('.learn-link')?.classList.add('active');
+  } else if (bodyClass.includes('active-simulate')) {
+    document.querySelector('.simulate-link')?.classList.add('active');
+  } else if (bodyClass.includes('active-dashboard')) {
+    document.querySelector('.dashboard-link')?.classList.add('active');
+  } else if (bodyClass.includes('active-contact')) {
+    document.querySelector('.contact-link')?.classList.add('active');
+  }
+</script>

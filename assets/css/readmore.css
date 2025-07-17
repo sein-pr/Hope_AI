@@ -1,0 +1,283 @@
+/* General Page Header for Learn More */
+.page-header {
+    color: white;
+    background: linear-gradient(135deg, #F5E8D8, #77A88F, #B35C27);
+    background-size: 200% 200%;
+    animation: gradientShift 15s ease infinite;
+    padding: 60px 0;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Module Content Sections */
+.module-section {
+    padding: 40px 0;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    opacity: 0; /* For scroll-triggered fade-in */
+    transform: translateY(20px); /* For scroll-triggered fade-in */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.module-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.module-section h2 {
+    color: #234738;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.module-section p {
+    line-height: 1.8;
+    color: #555;
+}
+
+.module-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.module-section video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Quiz Modal Styling */
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #f8f9fa;
+}
+
+.modal-header {
+    background-color: #234738 !important; /* Dark green from navbar */
+    color: white;
+    border-bottom: none;
+    padding: 1.5rem;
+}
+
+.modal-title {
+    font-size: 1.75rem;
+}
+
+.modal-body {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.quiz-question-number {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+.progress {
+    height: 12px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    background-color: #77A88F !important; /* Primary green */
+    transition: width 0.6s ease-in-out;
+}
+
+#quiz-question-container {
+    min-height: 200px; /* Ensure enough space for questions */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#quiz-feedback {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #28a745; /* Green for correct, red for incorrect */
+}
+
+#quiz-score {
+    font-size: 1.8rem;
+    color: #007bff; /* Blue for score */
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 1.5rem;
+    background-color: #f1f2f3;
+}
+
+/* Multiple Choice Question Styling */
+.mcq-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.mcq-option-card {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 500;
+    flex: 1 1 calc(50% - 15px); /* Two columns on larger screens */
+    max-width: 45%;
+    text-align: center;
+}
+
+.mcq-option-card:hover {
+    border-color: #77A88F;
+    box-shadow: 0 4px 12px rgba(119, 168, 143, 0.2);
+    transform: translateY(-3px);
+}
+
+.mcq-option-card.correct {
+    background-color: #d4edda; /* Light green */
+    border-color: #28a745; /* Green */
+    color: #155724;
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.4);
+    pointer-events: none; /* Disable further clicks */
+}
+
+.mcq-option-card.incorrect {
+    background-color: #f8d7da; /* Light red */
+    border-color: #dc3545; /* Red */
+    color: #721c24;
+    box-shadow: 0 0 15px rgba(220, 53, 69, 0.4);
+    pointer-events: none; /* Disable further clicks */
+}
+
+/* Responsive adjustments for MCQ options */
+@media (max-width: 768px) {
+    .mcq-option-card {
+        flex: 1 1 100%; /* Single column on small screens */
+        max-width: 100%;
+    }
+}
+
+/* Timed Multiple Choice (Canvas for floating balls) */
+#timed-mcq-canvas {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #e9f5ee; /* Light green background */
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.timer-bar-container {
+    width: 80%;
+    height: 15px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+#timer-bar {
+    height: 100%;
+    width: 100%;
+    background-color: #B35C27; /* Orange-brown for timer */
+    transition: width linear; /* Smooth transition for countdown */
+}
+
+/* Sentence Matching (Drag and Drop) */
+.sentence-match-container {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sentence-part {
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.draggable-word {
+    background-color: #77A88F; /* Primary green */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: grab;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.draggable-word:hover {
+    background-color: #6a957a;
+    transform: translateY(-2px);
+}
+
+.droppable-slot {
+    min-width: 120px; /* Ensure enough space for dropped word */
+    min-height: 40px;
+    border: 2px dashed #B35C27; /* Orange-brown dashed border */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff8f2; /* Light orange background */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.droppable-slot.drag-over {
+    background-color: #e6ffe6; /* Light green when dragged over */
+    border-color: #28a745;
+}
+
+.droppable-slot.correct-drop {
+    background-color: #d4edda; /* Light green */
+    border-color: #28a745; /* Green */
+    color: #155724;
+}
+
+.droppable-slot.incorrect-drop {
+    background-color: #f8d7da; /* Light red */
+    border-color: #dc3545; /* Red */
+    color: #721c24;
+}
+
+/* Hide the native close button on the modal header */
+.modal-header .btn-close {
+    display: block; /* Ensure it's visible, then hide if needed by JS */
+}
+
+/* Custom button styles for quiz */
+.btn-primary, .btn-success {
+    background-color: #77A88F; /* Primary green */
+    border-color: #77A88F;
+}
+
+.btn-primary:hover, .btn-success:hover {
+    background-color: #6a957a;
+    border-color: #6a957a;
+}
+
+.btn-primary.disabled, .btn-success.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}

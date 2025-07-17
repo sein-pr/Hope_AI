@@ -1,0 +1,171 @@
+{
+  "metrics": [
+    {
+      "title": "Annual Production",
+      "value": "5,461",
+      "change": "+12%",
+      "icon": "chart-line",
+      "color": "primary",
+      "description": "Tonnes U₃O₈",
+      "tooltip": "12% increase from 2023 production levels"
+    },
+    {
+      "title": "Active Mines",
+      "value": "4",
+      "change": "Steady",
+      "icon": "industry",
+      "color": "success",
+      "description": "Operational sites",
+      "tooltip": "Rössing, Husab, Langer Heinrich, and Trekkopje mines"
+    },
+    {
+      "title": "Direct Employment",
+      "value": "4,200",
+      "change": "+5%",
+      "icon": "users",
+      "color": "warning",
+      "description": "Jobs in sector",
+      "tooltip": "Does not include contract workers"
+    },
+    {
+      "title": "Export Value",
+      "value": "$325M",
+      "change": "+8%",
+      "icon": "dollar-sign",
+      "color": "info",
+      "description": "Annual revenue",
+      "tooltip": "25% of Namibia's mineral exports"
+    }
+  ],
+  "mines": [
+    {
+      "id": "rossing",
+      "name": "Rössing Uranium",
+      "color": "rgba(255, 99, 132, 0.7)",
+      "borderColor": "rgba(255, 99, 132, 1)",
+      "production": [2015, 1890, 1750, 1820, 1950, 2100],
+      "reserves": 150000,
+      "coordinates": {
+        "lat": -22.4833,
+        "lng": 14.5333
+      }
+    },
+    {
+      "id": "husab",
+      "name": "Husab Mine",
+      "color": "rgba(54, 162, 235, 0.7)",
+      "borderColor": "rgba(54, 162, 235, 1)",
+      "production": [0, 850, 1200, 1500, 1800, 2000],
+      "reserves": 280000,
+      "coordinates": {
+        "lat": -22.5833,
+        "lng": 14.9667
+      }
+    },
+    {
+      "id": "langer",
+      "name": "Langer Heinrich",
+      "color": "rgba(255, 206, 86, 0.7)",
+      "borderColor": "rgba(255, 206, 86, 1)",
+      "production": [950, 1000, 1050, 0, 0, 750],
+      "reserves": 80000,
+      "coordinates": {
+        "lat": -23.5,
+        "lng": 15.0
+      }
+    },
+    {
+      "id": "trekkopje",
+      "name": "Trekkopje",
+      "color": "rgba(75, 192, 192, 0.7)",
+      "borderColor": "rgba(75, 192, 192, 1)",
+      "production": [0, 0, 0, 0, 500, 611],
+      "reserves": 60000,
+      "coordinates": {
+        "lat": -22.3667,
+        "lng": 15.0333
+      }
+    }
+  ],
+  "production": {
+    "years": [2019, 2020, 2021, 2022, 2023, 2024]
+  },
+  "employment": {
+    "years": [2019, 2020, 2021, 2022, 2023, 2024],
+    "total": [3800, 3600, 3750, 3900, 4000, 4200],
+    "namibianPercentage": 85
+  },
+  "exports": {
+    "destinations": [
+      {
+        "country": "China",
+        "percentage": 42,
+        "value": 136.5
+      },
+      {
+        "country": "European Union",
+        "percentage": 28,
+        "value": 91
+      },
+      {
+        "country": "United States",
+        "percentage": 20,
+        "value": 65
+      },
+      {
+        "country": "Other",
+        "percentage": 10,
+        "value": 32.5
+      }
+    ],
+    "totalValue": 325
+  },
+  "environment": {
+    "waterUsage": {
+      "rossing": 3500000,
+      "husab": 4200000,
+      "langer": 2800000,
+      "trekkopje": 3100000,
+      "unit": "cubic meters/year"
+    },
+    "carbonFootprint": {
+      "rossing": 120000,
+      "husab": 150000,
+      "langer": 90000,
+      "trekkopje": 110000,
+      "unit": "tons CO2/year"
+    },
+    "rehabilitation": {
+      "completed": 12,
+      "planned": 8,
+      "unit": "hectares"
+    },
+    "renewableEnergy": {
+      "percentage": 35,
+      "target": 50
+    }
+  },
+  "news": [
+    {
+      "title": "Rössing Uranium Extends Mine Life to 2036",
+      "date": "July 15, 2024",
+      "summary": "Rio Tinto announces $115 million investment to extend Namibia's oldest uranium mine operations.",
+      "category": "Mining",
+      "link": "#"
+    },
+    {
+      "title": "Namibia Signs New Uranium Agreement with EU",
+      "date": "July 10, 2024",
+      "summary": "Five-year supply contract secured for 2,500 tonnes annually to European nuclear plants.",
+      "category": "Trade",
+      "link": "#"
+    },
+    {
+      "title": "Husab Mine Achieves Production Record",
+      "date": "June 28, 2024",
+      "summary": "Swakop Uranium reports 2,000 tonnes produced in first half of 2024, a 10% increase.",
+      "category": "Production",
+      "link": "#"
+    }
+  ]
+}

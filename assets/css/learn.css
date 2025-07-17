@@ -1,0 +1,133 @@
+:root {
+  --primary-color: #77A88F;
+  --secondary-color: #B35C27;
+  --light-bg-color: #F5E8D8;
+  --text-dark: #212529;
+  --text-muted: #6c757d;
+  --navbar-bg: #234738;
+}
+
+/* ================= HERO SECTION ================= */
+.hero-and-image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, var(--light-bg-color), var(--primary-color), var(--secondary-color));
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero p.lead {
+  color: #f1f1f1;
+}
+
+/* ================= SECTION LABELS ================= */
+.section-label {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-underline {
+  width: 50px;
+  height: 3px;
+  background-color: var(--secondary-color);
+  margin: 0 auto 20px auto;
+}
+
+/* ================= EDUCATION CARDS ================= */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-body i {
+  font-size: 2.2rem;
+}
+
+.card-body p{
+  font-size: 1.1rem;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.card:hover .card-text {
+  color: #fff !important;
+}
+
+/* ================= FADE-IN ANIMATIONS ================= */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= CTA SECTION ================= */
+.cta-section {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.cta-section .btn {
+  background-color: white;
+  color: var(--secondary-color);
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-section .btn:hover {
+  background-color: #e6e6e6;
+  color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .card-body {
+    text-align: center;
+  }
+}
+
+/* ================= GRADIENT ANIMATION ================= */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

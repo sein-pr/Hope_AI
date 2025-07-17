@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="active-learn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn | UraMap Namibia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/png" href="assets/img/ico.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script src="assets/js/include-navbar.js"></script>
+  <link rel="stylesheet" href="assets/css/learn.css">
+</head>
+<body class="active-learn">
+
+  <div id="navbar-placeholder"></div>
+
+  <!-- Hero Section -->
+  <section class="hero-and-image-container">
+    <div id="particles-js"></div>
+    <div class="container hero-content-wrapper">
+      <div class="row align-items-center">
+        <div class="col-lg-7 text-white text-center text-lg-start">
+          <h1 class="display-4 fw-bold mb-3">Learn About Uranium & Mining in Namibia</h1>
+          <p class="lead mb-4">From geology to sustainability, explore how uranium powers the future — and Namibia’s place in it.</p>
+        </div>
+        <div class="col-lg-5 text-center mt-4 mt-lg-0">
+          <img src="assets/img/ico.png" alt="Education" class="img-fluid rounded hero-main-image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Educational Modules -->
+  <section class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+      <p class="section-label text-uppercase text-center">Educational Topics</p>
+      <div class="section-underline mx-auto mb-4"></div>
+      <h2 class="text-center fw-bold mb-5">What You'll Learn</h2>
+
+      <div class="row g-4">
+        <!-- Module 1 -->
+        <div class="col-md-6"  onclick="window.location.href='learn-uranium.html'">
+          <div class="card h-100 shadow-sm p-4 fade-in-section">
+            <div class="card-body">
+              <i class="fas fa-atom fa-2x text-primary mb-3"></i>
+              <h5 class="fw-bold">What is Uranium?</h5>
+              <p class="text-muted">Uranium is a heavy metal used as fuel in nuclear reactors. It occurs naturally and is mined from the earth. Learn about its formation, isotopes, and how it powers clean energy.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="col-md-6" onclick="window.location.href='learn-mining.html'">
+          <div class="card h-100 shadow-sm p-4 fade-in-section">
+            <div class="card-body">
+              <i class="fas fa-flask fa-2x text-danger mb-3"></i>
+              <h5 class="fw-bold">Mining Methods: ISR vs Open Pit</h5>
+              <p class="text-muted">In-Situ Recovery (ISR) is a less invasive technique compared to traditional open-pit mining. Explore the pros, cons, and environmental impacts of each method.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div onclick="window.location.href='learn-namibia-role.html'" class="col-md-6">
+          <div class="card h-100 shadow-sm p-4 fade-in-section">
+            <div class="card-body">
+              <i class="fas fa-globe-africa fa-2x text-success mb-3"></i>
+              <h5 class="fw-bold">Namibia’s Role in Global Uranium Supply</h5>
+              <p class="text-muted">Namibia is one of the top producers of uranium worldwide. Discover the country’s major mines, export routes, and its strategic position in the clean energy future.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm p-4 fade-in-section">
+            <div class="card-body">
+              <i class="fas fa-seedling fa-2x text-warning mb-3"></i>
+              <h5 class="fw-bold">Environmental Impact</h5>
+              <p class="text-muted">Mining and radiation raise valid concerns. Understand how regulations, IAEA standards, and technologies are minimizing the ecological footprint of uranium mining.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- (Optional) More modules here... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section text-white text-center py-5">
+    <div class="container py-4">
+      <h2 class="display-5 fw-bold mb-3">Explore, Learn, and Engage</h2>
+      <p class="lead mb-4">Now that you know more about uranium, why not try the simulation or explore the map?</p>
+      <a href="simulate.html" class="btn btn-light btn-lg px-5 py-3 rounded-pill">Go to Simulation</a>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="assets/js/particles-config.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll('.fade-in-section');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* learn-namibia-role.css */
+
+/* Reusing color variables from learn.css and learn-uranium.css */
+:root {
+  --primary-color: #77A88F; /* Greenish */
+  --secondary-color: #B35C27; /* Orangish */
+  --light-bg-color: #F5E8D8; /* Light background */
+  --text-dark: #212529;
+  --text-muted: #6c757d;
+  --navbar-bg: #234738; /* Dark teal */
+}
+
+/* Specific styles for the hero icon in this module */
+.hero-icon {
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.hero-icon:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Styling for the Mine Cards */
+.mine-card {
+  background-color: #fff; /* White background for clarity */
+  border: 1px solid #e0e0e0; /* Light border */
+  border-radius: 12px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.mine-card .card-body {
+  padding: 2rem; /* Ample padding inside the card */
+}
+
+.mine-card h4 {
+  margin-bottom: 1rem;
+}
+
+.mine-card p.text-muted {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.mine-card ul {
+  margin-top: 1.5rem;
+  padding-left: 0; /* Remove default padding */
+}
+
+.mine-card ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+/* Styling for icons within lists */
+.mine-card ul li i {
+  color: var(--primary-color); /* Use primary color for list icons */
+}
+
+/* Hover effect for mine cards */
+.mine-card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+/* Specific color for Rössing card heading/icon */
+.mine-card .text-primary {
+  color: var(--primary-color) !important;
+}
+
+/* Specific color for Husab card heading/icon */
+.mine-card .text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .hero-icon {
+    font-size: 8x; /* Smaller icon on mobile to fit better */
+  }
+
+  .mine-card .card-body {
+    padding: 1.5rem; /* Reduce padding on smaller screens */
+  }
+
+  .mine-card img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+  }
+}

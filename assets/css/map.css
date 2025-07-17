@@ -1,0 +1,87 @@
+/* Main map container */
+#map {
+    height: 50rem;
+    width: 85%;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s ease;
+    z-index: 0;
+}
+
+#map:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive fix for very small screens */
+@media (max-width: 576px) {
+    #map {
+        height: 400px;
+    }
+}
+
+/* Page padding */
+.map-page-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* FontAwesome marker styles */
+.fa-icon-marker i {
+    font-size: 24px;
+    text-align: center;
+}
+
+.marker-green { color: green; }
+.marker-orange { color: orange; }
+.marker-blue { color: blue; }
+
+.legend-icon {
+    margin-right: 6px;
+    width: 16px;
+    text-align: center;
+}
+
+/* Highlight polygon animation */
+.flash-highlight path {
+    stroke-width: 2;
+    animation: flash 1s ease-in-out;
+}
+
+@keyframes flash {
+    0%   { stroke-width: 3; opacity: 0.6; }
+    50%  { stroke-width: 6; opacity: 1; }
+    100% { stroke-width: 3; opacity: 0.6; }
+}
+
+/* Label above the marker icon */
+.marker-label-container {
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  top: -6px;
+}
+
+.marker-label-text {
+  font-size: 11px;
+  font-weight: bold;
+  color: black;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.page-header {
+    color: white;
+    background: linear-gradient(135deg, #F5E8D8, #77A88F, #B35C27); 
+    background-size: 200% 200%;
+    animation: gradientShift 15s ease infinite;
+}
+
